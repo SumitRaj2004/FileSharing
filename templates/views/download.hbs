@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+   <section class="download-section">
+    <div class="container">
+        <div class="download-box">
+         <img src="/images/download-svg.svg" alt="">   
+            <h1>Your file is ready to download</h1>
+            <p>Link will expire within 24h after initially uploading</p>
+            <p class="file-name">{{fileName}}</p>
+            <p class="file-size">{{fileSize}}</p>
+            <a href="/files/download/{{id}}" class="download-btn">Download</a>
+        </div>   
+    </div>
+   </section>
+
+</body>
+</html>

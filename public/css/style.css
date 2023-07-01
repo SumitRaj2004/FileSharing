@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    --blue-color : #03a9f4; 
+    --background-color : #edf5fe;
+    --white-color : #fff;
+    --border-color : #b9def2;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1280px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.home-section{
+    height: 100vh;
+    padding: 5rem 0;
+    background: var(--background-color);
+}
+.home-section > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.box{
+    width: 60rem;
+    max-width: 100%;
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+
+.box form{
+    border: 3px dashed var(--border-color);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+form img{
+    max-width: 8rem;
+}
+
+form label{
+    color: var(--blue-color);
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+form label:hover{
+    text-decoration: underline;
+}
+
+form input{
+    display: none;
+}
+
+.link-box.show{
+    display: block;
+}
+
+.link-box {
+    margin-top: 4rem;
+    display: none;
+
+}
+
+.link-box h1{
+    color: rgb(116, 116, 116);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+.link-box div{
+    margin-top: 2rem;
+    border: 3px dashed var(--border-color);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--background-color);
+    cursor: pointer;
+}
+
+.link-box div p{
+    font-size: 1.5rem;
+    color: rgb(92, 92, 92);
+}
+.link-box div i{
+    font-size: 2.2rem;
+    color: rgb(92, 92, 92);
+}
+
+
+.error-box{
+    display: none;
+}
+
+.error-box.show{
+    display: block;
+    margin-top: 2rem;
+    border: 2px dashed rgb(255, 122, 122);
+    border-radius: 1rem;
+    background: rgb(254, 233, 233);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: flex-start;
+    padding: 0.8rem 1rem;
+}
+
+.error-box i{
+    font-size: 1.6rem;
+    color: #2a2a2a;
+}
+
+.error-box p {
+    font-size: 1.3rem;
+    color: var(--white-color);
+    font-weight: 400;
+    color: #2a2a2a;
+}
+
+/* download section */
+
+.download-section{
+    height: 100vh;
+    padding: 5rem 0;
+    background: var(--background-color);
+}
+.download-section > .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.download-box{
+    width: 60rem;
+    max-width: 100%;
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    text-align: center;
+}
+   
+.download-box img{
+    max-width: 10rem;
+}
+
+.download-box > h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #2a2a2a;
+}
+.download-box > p{
+    color: gray;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 400;
+}
+
+.download-box .file-name{
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #2a2a2a;
+}
+
+.download-box .file-size{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #5b5b5b;
+}
+.download-box .download-btn{
+    margin-top: 1rem;
+    display: inline-block;
+    background: #2a2a2a;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    border-radius: 1rem;
+}

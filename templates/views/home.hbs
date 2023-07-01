@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+   <section class="home-section">
+    <div class="container">
+        <div class="box">
+            <form action="/" method="POST" enctype="multipart/form-data">
+                <img src="/images/file-svg.svg" alt="">
+                <label for="file">Browse Here</label>
+                <input type="file" name="image" id="file" name="image">
+            </form>
+            <div class="error-box {{showError}}">
+                <i class="fa-regular fa-circle-exclamation"></i>
+                <p>{{errorMessage}}</p>
+            </div>
+            <div class="link-box {{showLink}}">
+                <h1>Link expires in 24 hrs</h1>
+                <div>
+                    <p>{{link}}</p>
+                    <i class="fa-regular fa-copy"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+</body>
+</html>
