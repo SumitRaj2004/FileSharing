@@ -1,7 +1,10 @@
 import express from "express"
+import {rimraf} from "rimraf";
 import path from "path";
 import url from "url"
 import File from "../models/fileModel.js";
+import fs from "fs";
+import deletePrevious from "../config/delete.js";
 import {config} from "dotenv"
 config();
 const __filename = url.fileURLToPath(import.meta.url);
@@ -22,6 +25,15 @@ const homeController = {
             showLink : "show",
             link : `${process.env.URL}/files/${file._id}`
         })
+
+        deletePrevious();
+        
+        // deleting the file after 24h
+        // setTimeout(() => {
+        //     fs.unlink(file.path, async() => {
+        //         await File.findByIdAndDelete(file._id);
+        //     })
+        // }, 20000)
     },
     renderDownload : async(req, res) => {
         try{
@@ -52,6 +64,6 @@ const homeController = {
             res.send("The file you want to download is either expired or doesn't exist")
         }
     }
-}
+}   
 
-export default homeController;
+export default homeController;  
